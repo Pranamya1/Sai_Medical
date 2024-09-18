@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sai Medical</title>
 
+  <link rel="stylesheet" href="./html/media.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -18,12 +19,12 @@
     body {
       background-color: azure;
     }
-
+/* nav-bar */
     .header {
       position: fixed;
       z-index: 1000;
     }
-
+/* head */
     #categories {
       width: 100vw;
       height: 95vh;
@@ -39,6 +40,8 @@
       margin-left: 9vw;
       margin-top: 5vh;
       transition: background-color 0.3s ease, color 0.3s ease;
+      border-radius: 30px 0px;
+      overflow: hidden;
     }
 
     .category:hover {
@@ -47,12 +50,10 @@
       border: 1px solid black;
     }
 
-
     .img {
       height: 80%;
       width: 100%;
     }
-
 
     .name {
       margin-left: 12vw;
@@ -91,9 +92,9 @@
 
     #one {
       background-color: bisque;
-      border-radius: 3vh;
-      border: 1px solid black;
+      border-radius: 0px 30px;
       width: 40vw;
+      border: thin solid black;
     }
 
     #img {
@@ -109,20 +110,29 @@
 
     .h2 {
       margin-left: 4vw;
+      margin-top: -2vw;
     }
 
     .h4 {
-      margin-left: 6vw;
+      margin-left: 10vw;
+      margin-top: -6vh;
     }
 
     #two {
       background-color: bisque;
-      border-radius: 3vh;
-      border: 1px solid black;
+      border-radius: 30px 0px;
+      border: thin solid black;
       margin-left: 1vw;
       width: 40vw;
 
     }
+
+    #img-two {
+  height: 40%;
+  width: 40%;
+margin-left: -4vw;
+margin-top: -1vh;
+}
 
     .button {
       background-color: rgb(18, 216, 238);
@@ -166,167 +176,173 @@
 
     @media (max-width: 500px) {
 
-      #categories {
-        width: 100vw;
-        height: 45vh;
+#categories {
+  width: 100vw;
+  height: 45vh;
 
-      }
+}
 
-      .category {
-        background-color: rgba(0, 0, 0, 0.5);
-        height: 15vh;
-        width: 25vw;
-        float: left;
-        margin-left: 5vw;
+.category {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 15vh;
+  width: 25vw;
+  float: left;
+  margin-left: 5vw;
 
-      }
+}
 
-      .category:hover {
-        background-color: rgba(0, 0, 0, 0.7);
-        height: 15vh;
-        width: 20vw;
-        float: left;
-        margin-left: 9vw;
-        margin-top: 5vh;
-      }
-
-
-      .img {
-        height: 80%;
-        width: 100%;
-      }
+.category:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 15vh;
+  width: 20vw;
+  float: left;
+  margin-left: 9vw;
+  margin-top: 5vh;
+}
 
 
-      .name {
-        margin-left: 9vw;
-        margin-top: 1vh;
-        float: left;
-        font-size: 20px;
-      }
-
-      .name-two {
-        margin-left: 12vw;
-        margin-top: 1vh;
-        float: left;
-      }
-
-      h6 {
-        font-size: 2vh;
-      }
-
-      h6:hover {
-        font-size: 6vh;
-        text-align: center;
-        color: white;
-      }
-
-      #prescription {
-        height: 30vh;
-        width: 80.1vw;
-        margin-left: 9vw;
-        border-radius: 3vh;
-        display: flex;
-        flex-direction: column;
-        margin-top: -0.5vh;
-      }
-
-      #img {
-        margin-top: 2.5vh;
-        float: left;
-        margin-left: 5vw;
-      }
-
-      #one {
-        background-color: bisque;
-        border-radius: 1vh;
-        border: 1px solid black;
-        width: 80vw;
-        height: 15vh;
-      }
-
-      .h3 {
-        margin-top: 2vh;
-        margin-left: 1vw;
-      }
+.img {
+  height: 80%;
+  width: 100%;
+}
 
 
-      .button {
-        background-color: rgb(18, 216, 238);
-        margin-left: 5vw;
-        height: 3vh;
-        width: 30vw;
-        border-radius: 1vh;
-      }
+.name {
+  margin-left: 9vw;
+  margin-top: 1vh;
+  float: left;
+  font-size: 20px;
+}
 
-      .button:hover {
-        background-color: gray;
-        color: white;
-      }
+.name-two {
+  margin-left: 12vw;
+  margin-top: 1vh;
+  float: left;
+}
 
-      #two {
-        background-color: bisque;
-        border-radius: 1vh;
-        border: 1px solid black;
-        margin-top: 1vw;
-        width: 80vw;
-        height: 40vh;
-        margin-left: -0.2vw;
-      }
+h6 {
+  font-size: 2vh;
+}
 
-      .h2 {
-        margin-left: 4vw;
-      }
+h6:hover {
+  font-size: 6vh;
+  text-align: center;
+  color: white;
+}
 
-      .h4 {
-        margin-left: 6vw;
-      }
+#prescription {
+  height: 30vh;
+  width: 80.1vw;
+  margin-left: 9vw;
+  border-radius: 3vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: -0.5vh;
+}
 
-      #card {
-        background-color: rgb(219, 19, 1);
-        height: auto;
-        width: 100vw;
-      }
+#img {
+  margin-top: 2.5vh;
+  float: left;
+  margin-left: 5vw;
+}
 
-      .name-h1 {
-        margin-top: 5vh;
-      }
+#one {
+  background-color: bisque;
+  border-radius: 0px 30px;
+  border: 1px solid black;
+  width: 80vw;
+  height: 15vh;
+}
 
-      .card {
-        background-color: rgba(0, 0, 0, 0.6);
-        color: #fff;
-        border-radius: 1vw;
-        overflow: hidden;
-        width: 35vw;
-        height: 20vh;
-        text-align: center;
-        transition: transform 0.3s ease;
-        /* border: 2px solid black; */
-        height: auto;
-        text-decoration: underline black;
-        float: left;
-        margin-left: 4vh;
-      }
+.h3 {
+  margin-top: 2vh;
+  margin-left: 1vw;
+}
 
-      .card img {
-        width: 100%;
-        height: 15vh;
-        object-fit: cover;
-      }
 
-      .card:hover {
-        transform: scale(1.1);
-      }
+.button {
+  background-color: rgb(18, 216, 238);
+  margin-left: 5vw;
+  height: 3vh;
+  width: 30vw;
+  border-radius: 1vh;
+}
 
-      #location {
-        height: 30vh;
-        width: 90vw;
-        margin-left: 2.5vw;
-        border-radius: 3vh;
-        border: 2px solid black;
-        margin-top: 5vh;
-      }
+.button:hover {
+  background-color: gray;
+  color: white;
+}
 
-    }
+#two {
+  background-color: bisque;
+  border-radius: 30px 0px;
+  border: 1px solid black;
+  margin-top: 1vw;
+  width: 80vw;
+  height: 40vh;
+  margin-left: -0.2vw;
+}
+
+#img-two {
+  height: 40%;
+  width: 40%;
+margin-left: -8vw;
+}
+
+.h2 {
+  margin-left: 1vw;
+}
+
+.h4 {
+  margin-left: 10vw;
+  margin-top: -3vh;
+}
+
+#card {
+  height: auto;
+  width: 100vw;
+}
+
+.name-h1 {
+  margin-top: 5vh;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 1vw;
+  overflow: hidden;
+  width: 35vw;
+  height: 20vh;
+  text-align: center;
+  transition: transform 0.3s ease;
+  /* border: 2px solid black; */
+  height: auto;
+  text-decoration: underline black;
+  float: left;
+  margin-left: 4vh;
+}
+
+.card img {
+  width: 100%;
+  height: 15vh;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+#location {
+  height: 30vh;
+  width: 90vw;
+  margin-left: 2.5vw;
+  border-radius: 3vh;
+  border: 2px solid black;
+  margin-top: 5vh;
+}
+
+}
   </style>
 
 </head>
@@ -337,7 +353,7 @@
       <!-- nav-bar -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary header">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Sai Medical</a>
+          <div class="navbar-brand">Sai Medical</div> 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -383,7 +399,7 @@
       <!-- nav-bar end -->
 
       <!-- corosul -->
-      <div id="carouselExampleCaptions" class="carousel slide" style="margin-top: 2.5vh;">
+      <div id="carouselExampleCaptions" class="carousel slide" style="  ">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -438,10 +454,12 @@
           <div class="offcanvas-body">
             <!-- Content for Medicines Offcanvas -->
             <p>Search your medicines / care produtcs / others.</p>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
           </div>
         </div>
-
-
         <!-- medicines -->
         <!-- baby care -->
         <a href="./html/baby-care.html">
@@ -495,8 +513,8 @@
           <a href=""><button class="button" id="zoom">Upload </button></a>
         </div>
         <div id="two">
-          <h2 class="h2"><img id="img-two" src="./Assets/idea-removebg-preview.png" height="75vh"
-              style="margin-top: 1vh; margin-left: 1.5vw;" loading="lazy">How Does It Work ?</h2>
+          <h2 class="h2"><img id="img-two" src="./Assets/idea-removebg-preview.png"
+               loading="lazy">How Does It Work ?</h2>
           <h4 class="h4">Step 1:- Click On "Upload".</h4>
         </div>
       </div>
